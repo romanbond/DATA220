@@ -10,15 +10,20 @@ Data Analysis 220 working files and notes along with completed labs and exams.
     1. Using training and test data to predict outcomes in a large data set.
 
 ## Lecture Code
-<details>
-  <summary>Lecture 1</summary>
-  <p>
-      Multiple
-      Lines
-      Of
-      Code
-      Here
-  </p>
+<details><summary>Lecture 20</summary>
+<p>
+
+#### Lecture 20 
+
+```{r}
+require("Hmisc")
+require("rms")
+#install.packages("ggplot2")
+library(ggplot2)
+require(ggplot2)
+```
+
+</p>
 </details>
 
 
