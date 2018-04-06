@@ -5,9 +5,9 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 ## File Directory
 
 20. 4/6/18 Lecture20_LogisticRegression_Titanic_s18_Updated.R
-    a. Using training and test data to predict outcomes in a large data set.
+    1. Using training and test data to predict outcomes in a large data set.
 20. 4/5/18 Lecture20_LogisticRegression_Titanic_s18.R
-    a. Using training and test data to predict outcomes and measuring their accuracy.
+    1. Using training and test data to predict outcomes and measuring their accuracy.
 
 
 
@@ -15,5 +15,5 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 Directory Template
 ~~~
 L#. x/x/x  Lecture#_File_Name_Here_s18.R
-    a. Discription about lecture and file here.
+    1. Discription about lecture and file here.
 ~~~
