@@ -4,7 +4,7 @@
 
 
 ## Topics Covered
-01. x/x/x - Lecture#_Topic_Here_s18.R
+01. dd/mm - Lecture#_Topic_Here_s18.R
     1. Using (insert topic here)
 <details><summary>Past Classes</summary>
 <p>
@@ -47,9 +47,9 @@
 <p>
 </details><p>
 
-19. 4/5/18 - Lecture20_LogisticRegression_Titanic_s18.R
+19. 4/5 - Lecture20_LogisticRegression_Titanic_s18.R
     1. Using training and test data to predict outcomes and measuring their accuracy.
-20. 4/6/18 - Lecture20_LogisticRegression_Titanic_s18_Updated.R
+20. 4/6 - Lecture20_LogisticRegression_Titanic_s18_Updated.R
     1. Using training and test data to predict outcomes in a large data set.
 
 <details><summary></summary>
