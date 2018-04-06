@@ -38,7 +38,7 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 </details>
 
 ## Lecture Code Directory
-<details><summary>Lecture 20 F</summary>
+<details><summary>Lecture 20 F - Topic Description Here</summary>
 <p>
 
 #### Lecture 20 (Updated) F
@@ -207,7 +207,7 @@ table(d, test$Direction)
 </p>
 </details>
 
-<details><summary>Lecture 20 T</summary>
+<details><summary>Lecture 20 T - Topic Description Here</summary>
 <p>
 
 #### Lecture 20 T
@@ -382,7 +382,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 19 M</summary>
+<details><summary>Lecture 19 M - Topic Description Here</summary>
 <p>
 
 #### Lecture 19 M
@@ -394,7 +394,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 19 F</summary>
+<details><summary>Lecture 19 F - Topic Description Here</summary>
 <p>
 
 #### Lecture 19 F
@@ -406,7 +406,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 18 T</summary>
+<details><summary>Lecture 18 T - Topic Description Here</summary>
 <p>
 
 #### Lecture 18 T
@@ -418,7 +418,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 17 M</summary>
+<details><summary>Lecture 17 M - Topic Description Here</summary>
 <p>
 
 #### Lecture 17 M
@@ -430,7 +430,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 16 F</summary>
+<details><summary>Lecture 16 F - Topic Description Here</summary>
 <p>
 
 #### Lecture 16 F
@@ -442,7 +442,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 15 T</summary>
+<details><summary>Lecture 15 T - Topic Description Here</summary>
 <p>
 
 #### Lecture 15 T
@@ -454,7 +454,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 14 M</summary>
+<details><summary>Lecture 14 M - Topic Description Here</summary>
 <p>
 
 #### Lecture 14 M
@@ -466,7 +466,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 13 F</summary>
+<details><summary>Lecture 13 F - Topic Description Here</summary>
 <p>
 
 #### Lecture 13 F
@@ -478,7 +478,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 12 T</summary>
+<details><summary>Lecture 12 T - Topic Description Here</summary>
 <p>
 
 #### Lecture 12 T
@@ -490,7 +490,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 11 M</summary>
+<details><summary>Lecture 11 M - Topic Description Here</summary>
 <p>
 
 #### Lecture 11 M
@@ -502,7 +502,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 10 F</summary>
+<details><summary>Lecture 10 F - Topic Description Here</summary>
 <p>
 
 #### Lecture 10 F
@@ -514,7 +514,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 9 T</summary>
+<details><summary>Lecture 9 T - Topic Description Here</summary>
 <p>
 
 #### Lecture 9 T
@@ -526,7 +526,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 8 M</summary>
+<details><summary>Lecture 8 M - Topic Description Here</summary>
 <p>
 
 #### Lecture 8 M
@@ -538,7 +538,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 7 F</summary>
+<details><summary>Lecture 7 F - Topic Description Here</summary>
 <p>
 
 #### Lecture 7 F
@@ -550,7 +550,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 6 T</summary>
+<details><summary>Lecture 6 T - Topic Description Here</summary>
 <p>
 
 #### Lecture 6 T
@@ -562,7 +562,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 5 M</summary>
+<details><summary>Lecture 5 M - Topic Description Here</summary>
 <p>
 
 #### Lecture 5 M
@@ -574,7 +574,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 4 F</summary>
+<details><summary>Lecture 4 F - Topic Description Here</summary>
 <p>
 
 #### Lecture 4 F
@@ -586,7 +586,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 3 T</summary>
+<details><summary>Lecture 3 T - Topic Description Here</summary>
 <p>
 
 #### Lecture 3 T
@@ -598,7 +598,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 2 M</summary>
+<details><summary>Lecture 2 M - Topic Description Here</summary>
 <p>
 
 #### Lecture 2 M
@@ -610,7 +610,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture 1 M</summary>
+<details><summary>Lecture 1 M - Topic Description Here</summary>
 <p>
 
 #### Lecture 1 M
