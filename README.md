@@ -3,14 +3,10 @@
 *Data Analytics is the science of analyzing data to convert information to useful knowledge. This knowledge could help us understand our world better, and in many contexts enable us to make better decisions. While this is the broad and grand objective, the last 20 years has seen steeply decreasing costs to gather, store, and process data, creating an even stronger motivation for the use of empirical approaches to problem solving. This course seeks to present you with a wide range of data analytic techniques and is structured around the broad contours of the different types of data analytics, namely, descriptive, inferential, predictive, and prescriptive analytics.*
 
 
-## File Directory
+## Topics Covered
 01. x/x/x - Lecture#_Topic_Here_s18.R
     1. Using (insert topic here)
-
-
-<details><summary>Past Classes</summary>
-<p>
-
+02. <details><summary>Past Classes</summary>
 #### Past Classes to Fill In
 
 ```r
@@ -47,9 +43,7 @@
 17.
     1. 
 ```
-
-</p>
-</details><p>
+</details>
 
 19. 4/5/18 - Lecture20_LogisticRegression_Titanic_s18.R
     1. Using training and test data to predict outcomes and measuring their accuracy.
