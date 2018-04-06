@@ -50,40 +50,6 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 </p>
 </details>
 
-<details><summary>Past Classes</summary>
-```
-03.
-    1. 
-04.
-    1. 
-05.
-    1. 
-06.
-    1. 
-07.
-    1. 
-08.
-    1. 
-09.
-    1. 
-10.
-    1. 
-11.
-    1. 
-12.
-    1. 
-13.
-    1. 
-14.
-    1. 
-15.
-    1. 
-16.
-    1. 
-17.
-    1. 
-```
-<details>
 19. 4/5/18 - Lecture20_LogisticRegression_Titanic_s18.R
     1. Using training and test data to predict outcomes and measuring their accuracy.
 20. 4/6/18 - Lecture20_LogisticRegression_Titanic_s18_Updated.R
