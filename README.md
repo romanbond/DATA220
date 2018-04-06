@@ -6,7 +6,8 @@
 ## Topics Covered
 01. x/x/x - Lecture#_Topic_Here_s18.R
     1. Using (insert topic here)
-02. <details><summary>Past Classes</summary>
+<details><summary>Past Classes</summary>
+<p>
 #### Past Classes to Fill In
 
 ```r
@@ -43,6 +44,7 @@
 17.
     1. 
 ```
+<p>
 </details>
 
 19. 4/5/18 - Lecture20_LogisticRegression_Titanic_s18.R
