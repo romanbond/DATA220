@@ -1,7 +1,7 @@
 # DATA220L_112_18S
 Data Analysis 220 working files and notes along with completed labs and exams.
 
-Markup :  - - - -
+Markup :  ============= 
 
 ## File Directory
 
