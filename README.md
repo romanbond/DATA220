@@ -10,8 +10,6 @@ Data Analysis 220 working files and notes along with completed labs and exams.
     1. Using training and test data to predict outcomes in a large data set.
 
 <details><summary></summary>
-<p>
-
 ```r
 # * This is just a place holder inside the readme code.
 #   -------------------------------   ⇩ Lecture Code Below ⇩   -------------------------------   #
@@ -35,7 +33,6 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 #
 #   -------------------------------   ⇩ Lecture Code Here ⇩   -------------------------------   #
 ```
-</p>
 </details>
 
 ## Lecture Code Directory
