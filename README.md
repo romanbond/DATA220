@@ -13,6 +13,7 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 <p>
 
 ```r
+# * This is just a place holder inside the readme code.
 #   -------------------------------   ⇩ Lecture Code Below ⇩   -------------------------------   #
 #
 #
