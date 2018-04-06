@@ -43,7 +43,7 @@
 17.
     1. 
 ```
-</details>
+</details><p>
 
 19. 4/5/18 - Lecture20_LogisticRegression_Titanic_s18.R
     1. Using training and test data to predict outcomes and measuring their accuracy.
