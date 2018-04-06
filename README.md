@@ -9,11 +9,39 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 20. 4/6/18 - Lecture20_LogisticRegression_Titanic_s18_Updated.R
     1. Using training and test data to predict outcomes in a large data set.
 
-## Lecture Code Directory
-<details><summary>Lecture #</summary>
+<details><summary>Ignore</summary>
 <p>
 
-#### Lecture 20 (Updated)
+```r
+#   -------------------------------   ⇩ Lecture Code Below ⇩   -------------------------------   #
+#
+#
+#
+#
+#
+#
+#
+#
+#
+# 
+#
+#
+#
+#
+#
+#
+#
+#
+#   -------------------------------   ⇩ Lecture Code Here ⇩   -------------------------------   #
+```
+</p>
+</details>
+
+## Lecture Code Directory
+<details><summary>Lecture 20 F</summary>
+<p>
+
+#### Lecture 20 (Updated) F
 
 ```r
 #---------------Logistic regression- Titanic example
@@ -179,10 +207,10 @@ table(d, test$Direction)
 </p>
 </details>
 
-<details><summary>Lecture #</summary>
+<details><summary>Lecture 20 T</summary>
 <p>
 
-#### Lecture 20
+#### Lecture 20 R
 
 ```r
 #---------------Logistic regression- Titanic example
@@ -354,7 +382,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture #</summary>
+<details><summary>Lecture 19 M</summary>
 <p>
 
 #### Lecture 19
@@ -366,7 +394,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture #</summary>
+<details><summary>Lecture 19 F</summary>
 <p>
 
 #### Lecture 19
@@ -378,7 +406,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture #</summary>
+<details><summary>Lecture 18 T</summary>
 <p>
 
 #### Lecture 18
@@ -390,7 +418,7 @@ mean(glm.pred==testTitanic$survived)
 </p>
 </details>
 
-<details><summary>Lecture #</summary>
+<details><summary>Lecture 17 M</summary>
 <p>
 
 #### Lecture 17
