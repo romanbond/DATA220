@@ -12,7 +12,13 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 ## Lecture Code
 <details>
   <summary>Lecture 1</summary>
-  <p>~~~Some code here~~~</p>
+  <p>
+      Multiple
+      Lines
+      Of
+      Code
+      Here
+  </p>
 </details>
 
 
