@@ -3,7 +3,7 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 
 
 ## File Directory
-01. x/x/x - LectureX_Topic_Here_s18.R
+01. x/x/x - Lecture#_Topic_Here_s18.R
     1. Using (insert topic here)
 02.
     1. 
