@@ -5,8 +5,51 @@ Data Analysis 220 working files and notes along with completed labs and exams.
 ## File Directory
 01. x/x/x - Lecture#_Topic_Here_s18.R
     1. Using (insert topic here)
+
+
+<details><summary>Past Classes</summary>
+<p>
+
+#### Past Classes to Fill In
+
+```r
 02.
     1. 
+03.
+    1. 
+04.
+    1. 
+05.
+    1. 
+06.
+    1. 
+07.
+    1. 
+08.
+    1. 
+09.
+    1. 
+10.
+    1. 
+11.
+    1. 
+12.
+    1. 
+13.
+    1. 
+14.
+    1. 
+15.
+    1. 
+16.
+    1. 
+17.
+    1. 
+```
+
+</p>
+</details>
+
 <details><summary>Past Classes</summary>
 ```
 03.
