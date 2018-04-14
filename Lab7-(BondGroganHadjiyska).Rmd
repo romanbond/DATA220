@@ -1,0 +1,135 @@
+---
+title: "Lab 7"
+author: 'Roman Bond, Dan Grogan, Iglika Hadjiyska'
+date: '4/13/18'
+output:
+  pdf_document: default
+  html_document:
+    fig_height: 4
+    fig_width: 6
+---
+
+**Author:** Dan Grogan
+
+**Discussants:** Roman Bond, Iglika Hadjiyska
+
+* * *
+
+**Load data:**
+
+
+
+```{r echo=FALSE}
+library("ISLR")
+?Weekly
+head(Weekly)
+attach(Weekly)
+```
+
+* * *
+
+#### 1:
+
+```{r}
+summary(Weekly)
+
+plot(Weekly)
+
+plot(Volume~Year)
+```
+
+There doesn't appear to be a strong correlation between many of the variables in the data set, however Year and Volume seem to have a correlation.
+
+
+#### 2:
+
+```{r}
+mod1 = glm(Direction ~ Lag1 + Lag2 + Lag3 + Lag4 + Lag5 + Volume, family = binomial)
+summary(mod1)
+```
+
+Lag 2 is statistically significant because it has a p-value of 0.03 which is less than 0.05.
+
+
+#### 3: 
+
+```{r}
+train = Weekly[which(Year <= 2008),]
+test = Weekly[which(!(Year <= 2008)),]
+dir2018 = Weekly$Direction[!(Year<= 2008)]
+
+probs1=predict(mod1,test,type="response")
+dim(test)
+pred1=rep("Down",104)
+pred1[probs1>.5]="Up"
+table(pred1,dir2018)
+prate1 = (17+48) / 104
+prate1
+```
+
+#### 4:
+
+```{r}
+mod2 = glm(Direction ~ Lag2, family = binomial)
+
+probs2=predict(mod2,test,type="response")
+pred2=rep("Down",104)
+pred2[probs2>.5]="Up"
+table(pred2,dir2018)
+prate2 = (9 + 56) / 104
+prate2
+
+mod3 = glm(Direction ~ Lag1 + Lag2 + Volume, family = binomial)
+
+probs3=predict(mod3,test,type="response")
+pred3=rep("Down",104)
+pred3[probs3>.5]="Up"
+table(pred3,dir2018)
+prate3 = (11 + 52) / 104
+prate3
+
+```
+
+
+```{r}
+head(Auto)
+```
+
+#### 5:
+
+```{r}
+Auto$mpg01=ifelse(Auto$mpg>=median(Auto$mpg),1,0) 
+attach(Auto)
+```
+
+#### 6:
+
+```{r}
+plot(Auto)
+plot(mpg01~displacement)
+plot(mpg01~horsepower)
+plot(mpg01~weight)
+```
+
+Based off of the above plots, it seems that displacement, horsepower and weight may be useful predictors for mpg01.
+
+#### 7:
+
+```{r}
+condition = (year<=80)
+Auto.train = Auto[condition,] #The training data set will be composed of cars made in the year 1980 or earlier
+Auto.test = Auto[!condition,] # The test data set will be composed of cars made later than 1980
+```
+
+
+#### 8:
+
+```{r}
+mod4 = glm(mpg01 ~ displacement + horsepower + weight, data = Auto.train, family = binomial)
+prob4 = predict(mod4, Auto.test, type = "response")
+Auto.d = rep(0,nrow(Auto.test))
+Auto.d[prob4 >=.5] = 1
+table(Auto.d,Auto.test$mpg01)
+Auto.prate = (4 + 46)/58
+Auto.prate
+```

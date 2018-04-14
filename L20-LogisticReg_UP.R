@@ -7,7 +7,6 @@ require("rms")
 library(ggplot2)
 require(ggplot2)
 
-
 getHdata(titanic3)
 head(titanic3)
 
