@@ -167,7 +167,7 @@ ggplot(df3, aes(Var1, Freq))+geom_bar(stat = "identity", fill = "steelblue")+geo
 #Q3: repeat Q1,Q2 for the drv
 
 ggplot(cdc, aes(weight, fill=gender))+geom_histogram()+facet_wrap(~gender)
-ggplot(mpg, aes(manufacturer))+eom_bar()
+ggplot(mpg, aes(manufacturer))+geom_bar()
 ggplot(mpg, aes(manufacturer))+geom_bar()
 ggplot(mpg, aes(manufacturer, col=drv))+geom_bar()
 ggplot(mpg, aes(drv, fill=drv))+geom_bar()
@@ -212,7 +212,7 @@ ggplot(economics,aes(unemploy/pop,uempmed))+
 year=function(x) as.POSIXlt(x)$year+1900
 ggplot(economics,aes(unemploy/pop,uempmed))+
     geom_path(color="grey50")+
-  geom_point(aes(color=year(date)))
+  geom_point(aes(color=year(date)))+theme_gray()
 
 #------practice example with cdc
 #add bmi in to cdc

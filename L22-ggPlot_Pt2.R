@@ -165,7 +165,7 @@ plot(g)
 
 #change lengend to "Midwest State"
 g <- ggplot(midwest, aes(x=area, y=poptotal, col=state))+geom_point(aes(size=poptotal))+ylim(c(0,100000))+labs(col="Midest State")
-
+plot(g)
 # add paths into the graph
 ggplot(midwest, 
        aes(x=area,

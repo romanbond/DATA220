@@ -1,0 +1,127 @@
+---
+title: "Lab 9"
+author: 'Roman Bond, Dan Grogan, Iglika Hadjiyska'
+date: '¯\_(ツ)_/¯'
+output:
+  html_document:
+    fig_height: 4
+    fig_width: 6
+  pdf_document: default
+---
+
+**Author:** Roman Bond, Dan Grogan, Iglika Hadjiyska
+
+
+
+* * *
+
+
+* * *
+
+#### 1:
+```{r}
+my.coin=function(){
+  nrep=100000
+  count=0
+  for(i in 1: nrep){
+    s=sample(c("H","T"),50,T)
+    if(sum(s=="H")>sum(s=="T")) count=count+1
+  }
+  count/nrep
+}
+
+my.coin()
+replicate(10,my.coin())
+```
+#### 2:
+```{r}
+
+my.die=function(){
+  nrep=100000
+  count=0
+  total=0
+  for(i in 1:nrep){
+    x=sample(1:6, size=6, T)
+    if(length(which(x==2))==4) count=count+1
+    #sum(numbers == x)
+  }
+  count/nrep
+}
+
+my.die()
+replicate(10,my.die())
+```
+#### 3: 
+```{r}
+my.birthday=function(){
+  nrep=100000
+  count=0
+  total=0
+  for(i in 1:nrep){
+    x=sample(1:365, size=34, T)
+    y <- as.data.frame(table(x))
+    #length(which(y[2]==2))
+    if(length(which(y[2]==2))==1) count=count+1
+    #sum(numbers == x)
+  }
+  count/nrep
+}
+
+my.birthday()
+replicate(10,my.birthday())
+
+#> x=c(1,2,3,4,5,6,7,8,9)
+#> y <- as.data.frame(table(x))
+#> count = 0
+#> if(length(which(y[2]==2))==1) count=100
+#> count
+#[1] 0
+#> x=c(1,2,3,4,5,6,7,8,9,1)
+#> y <- as.data.frame(table(x))
+#> if(length(which(y[2]==2))==1) count=100
+#> count
+#[1] 100
+#> my.birthday=function(){
+#+   nrep=100000
+#+   count=0
+#+   total=0
+#+   for(i in 1:nrep){
+#+     x=sample(1:365, size=34, T)
+#+     y <- as.data.frame(table(x))
+#+     #length(which(y[2]==2))
+#+     if(length(which(y[2]==2))==1) count=count+1
+#+     #sum(numbers == x)
+#+   }
+#+   count/nrep
+#+ }
+#> my.birthday()
+#[1] 0.36076
+#> my.birthday()
+#[1] 0.36226
+```
+#### 4:
+```{r}
+nrep=100000
+count=0
+for(i in 1: nrep){
+  x=sample(6,5,replace = T)
+  if(min(x)>=2) count=count+1
+}
+print(count/nrep)
+```
+<p>
+The above R code generates 100,000 vectors, using sample(6, ...) is the same as sample(1:6, ...) thus we have 100,000 vectors with a length of 5 values ranging from 1 to 6. The code then finds the smallest element within each vector that is generated and counts how many vectors whose smallest element is greater than or equal to 2. Once all 100,000 vectors are generted and analyzed, the program then provides the proportion of vectors whose smallest element is greater than or equal to 2.
+<p>
+
+#### 5:
+```{r}
+scramble.hats = function(n){
+  hats = 1:n
+  mixed.hats = sample(n)
+  sum(hats == mixed.hats)
+}
+
+scramble.hats(2)
+z <- c(replicate(1000,scramble.hats(2))) #vector of men who got their correct hat's back with 0 representing those who didn't and 2 representing those who did.
+length(which(z==2))/1000 #provides the pergentage of those who recieved their correct hats back
+```

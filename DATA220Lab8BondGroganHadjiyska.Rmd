@@ -1,0 +1,117 @@
+---
+title: "Lab 8"
+author: 'Roman Bond, Dan Grogan, Iglika Hadjiyska'
+date: '4/24/18'
+output:
+  html_document:
+    fig_height: 4
+    fig_width: 6
+  pdf_document: default
+---
+
+**Author:** Roman Bond, Dan Grogan, Iglika Hadjiyska
+
+
+
+* * *
+
+**Load data:**
+
+
+
+```{r echo=FALSE}
+#install.packages("ggplot2")
+library("ggplot2")
+
+```
+
+* * *
+
+#### 1:
+```{r}
+?mtcars 
+dim(mtcars) 
+head(mtcars)
+
+```
+There are 32 observations in this data set, along with 11 different variables. 
+
+Discrete Variables:
+-cyl
+-gear
+-carb
+
+Continuous Variables:
+-mpg
+-disp
+-hp
+-drat
+-wt
+-qsec
+
+Categorical Variables:
+-vs
+-am
+<p>
+
+#### 2:
+```{r}
+ggplot(mtcars,aes(x=disp,y=mpg))+geom_point()
+m <- ggplot(mtcars,aes(disp,mpg))+geom_point() +geom_smooth(method = "lm")
+plot(m)
+```
+
+#### 3: 
+```{r}
+mtcars$cylFac <- factor(mtcars$cyl, levels=c("4", "6", "8"))
+ggplot(mtcars, aes(x=mtcars$disp, y=mtcars$mpg, col=mtcars$cylFac))+geom_point()+labs(y="mpg", x="disp", col="Cylinder")
+```
+
+#### 4:
+```{r}
+mtcars$cylFac <- factor(mtcars$cyl, levels=c("4", "6", "8"))
+gg1 <- ggplot(mtcars, aes(x=mpg, fill=mtcars$cylFac)) + 
+  geom_histogram()+labs( y="count", x="mpg", fill="Cylinder")
+plot(gg1)
+
+```
+
+#### 5:
+```{r}
+ggplot(mtcars,aes(mpg))+geom_density(fill="tomato",col="black")
+```
+
+#### 6:
+```{r}
+ggplot(mtcars,aes(mpg,y=..density..))+geom_histogram(fill="blue",col="grey60")+geom_density(col="red")
+```
+ilearn
+#### 7:
+```{r}
+# ----- Add The Correct Labels *easy ----- #
+df1=data.frame(table(mtcars$carb))
+ggplot(df1, aes(Var1, Freq))+geom_bar(stat = "identity", fill = "blue")+geom_text(aes(label=Freq),vjust=1.5, color="white", size=3.5)+labs( y="Frequency", x="Carburetors")+guides(fill=F)+theme_minimal()
+```
+
+#### 8:
+```{r} 
+# ----- Add The Correct Labels *easy ----- #
+df1=data.frame(table(mtcars$carb))
+ggplot(df1, aes(Var1, Freq)) +
+  geom_bar(stat="identity", fill="green")+
+  geom_text(aes(label=Freq), vjust=-0.3, size=3.5, col="red")+labs( y="Frequency", x="Carburetors")+guides(fill=F)+theme_minimal()
+```
+
+#### 9:
+```{r}
+mtcars$cylFac <- factor(mtcars$cyl, levels=c("4", "6", "8"))
+ggplot(mtcars,aes(x=mtcars$cylFac,y=mtcars$mpg, group=cyl,fill=mtcars$cylFac))+
+  geom_boxplot()+labs( y="Miles per gallon", x="Number of cylinders")+guides(fill=F)+theme_classic()
+```
+
+#### 10:
+```{r}
+mtcars$amFac <- factor(mtcars$am, levels=c("0", "1"))
+ggplot(mtcars,aes(x=mtcars$am,y=mtcars$mpg, group=amFac,fill=mtcars$amFac))+
+  geom_boxplot()+labs( y="Miles per gallon", x="Transmission", fill="Transmission")+theme_classic()
+```
