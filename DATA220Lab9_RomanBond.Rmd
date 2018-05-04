@@ -61,7 +61,8 @@ my.birthday=function(){
     x=sample(1:365, size=34, T)
     y <- as.data.frame(table(x))
     #length(which(y[2]==2))
-    if(length(which(y[2]==2))==1) count=count+1
+    if(length(which(y[2]==2))==2) count=count+1 #need that 2nd 2 
+    # because we need to look for 2 pairs of Bdays
     #sum(numbers == x)
   }
   count/nrep

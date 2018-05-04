@@ -1,0 +1,122 @@
+---
+title: "Lab 9"
+author: 'Roman Bond, Dan Grogan, Iglika Hadjiyska'
+date: '5/4/18'
+output:
+  html_document:
+    fig_height: 4
+    fig_width: 6
+  pdf_document: default
+---
+
+**Author:** Roman Bond, Dan Grogan, Iglika Hadjiyska
+
+
+
+* * *
+
+
+* * *
+
+#### 1:
+```{r}
+my.coin=function(){
+  nrep=100000
+  count=0
+  for(i in 1: nrep){
+    s=sample(c("H","T"),50,T)
+    if(sum(s=="H")>sum(s=="T")) count=count+1
+  }
+  count/nrep
+}
+#Running the function once.
+my.coin()
+#Running the function ten times.
+replicate(10,my.coin())
+```
+#### 2:
+```{r}
+
+my.die=function(){
+  nrep=100000
+  count=0
+  total=0
+  for(i in 1:nrep){
+    x=sample(1:6, size=6, T)
+    if(length(which(x==2))==4) count=count+1
+  }
+  count/nrep
+}
+#Running the function once.
+my.die()
+#Running the function ten times.
+replicate(10,my.die())
+```
+#### 3: 
+```{r}
+my.birthday=function(){
+  nrep=100000
+  count=0
+  total=0
+  for(i in 1:nrep){
+    x=sample(1:365, size=34, T)
+    y <- as.data.frame(table(x))
+    if(length(which(y[2]==2))==2) count=count+1
+  }
+  count/nrep
+}
+
+#Running the function once.
+my.birthday()
+#Running the function ten times.
+replicate(10,my.birthday())
+```
+#### 4:
+```{r}
+nrep=100000
+count=0
+for(i in 1: nrep){
+  x=sample(6,5,replace = T)
+  if(min(x)>=2) count=count+1
+}
+print(count/nrep)
+```
+<p>
+The above R code generates 100,000 vectors, using sample(6, ...) is the same as sample(1:6, ...) thus we have 100,000 vectors with a length of 5 values ranging from 1 to 6. The code then finds the smallest element within each vector that is generated and counts how many vectors whose smallest element is greater than or equal to 2. Once all 100,000 vectors are generted and analyzed, the program then provides the proportion of vectors whose smallest element is greater than or equal to 2.
+<p>
+
+#### 5:
+Part A:<p>
+```{r}
+scramble.hats = function(){
+  hats = c(rep(1,10),rep(2,10))
+  mixed.hats = sample(hats)
+  sum(hats == mixed.hats)
+}
+scramble.hats()
+```
+Part B:<p>
+```{r}
+matches <- replicate(1000,scramble.hats())
+```
+Part C:<p>
+```{r}
+scramble.hatsTen = function(){
+  z <- c(replicate(1000,scramble.hats()))       
+  #vector of men who got their correct hat's back with 0 representing those who didn't and 2 representing those who did.
+  t <- table(z)                              
+  length(which(z==2))/1000 #provides the pergentage of those who recieved their correct hats back
+  t <- as.data.frame(table(z))              
+  total = 0
+  count = 0
+  sum(t[,"Freq"])
+  ztotal=length(t[,"z"])
+  index=which(t[,"z"]==10)
+  greater = c(index:ztotal)
+  for(i in index:ztotal){
+    total = total+t[i,"Freq"]
+  }
+total/1000
+}
+scramble.hatsTen()
+```
